@@ -10,7 +10,7 @@
 ## About <a name = "about"></a>
 
 This project delivers a container, that can be started and mapped to a path, where it deletes all files older than x amount of days, to cleanup old backup files.
-It's ment to collaborate with a backup tool, to be run after the back runs, to make sure you don't have to many old backup files laying around.
+It's ment to collaborate with a backup tool, to be run after the back runs, to make sure you don't have to many old backup files laying around. 
 
 ## Getting Started <a name = "getting_started"></a>
 
