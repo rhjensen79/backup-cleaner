@@ -17,7 +17,7 @@ def generate_dummy_files(folder_path, num_files):
         timestamp_str = last_modified.strftime("%Y%m%d%H%M%S")
 
         # Create a dummy file with the formatted timestamp
-        file_name = f"dummy_file_{timestamp_str}.txt"
+        file_name = f"backup_{timestamp_str}.tar.gz"
         file_path = os.path.join(folder_path, file_name)
 
         with open(file_path, 'w') as file:

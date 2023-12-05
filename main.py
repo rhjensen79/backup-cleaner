@@ -1,13 +1,7 @@
-import datetime
 import os
+import datetime
 
-path = os.environ.get("FOLDER_PATH", ".")
-days_threshold = os.environ.get("DAYS_THRESHOLD", 7)
-
-def find_old_backup_files(path, days_threshold):
-    # Get path and threshold
-    path = os.environ.get("FOLDER_PATH", ".")
-    days_threshold = os.environ.get("DAYS_THRESHOLD", 7)
+def find_old_backup_files(path, days_threshold=7):
     # Get the current date and time
     current_time = datetime.datetime.now()
 
@@ -30,4 +24,4 @@ def find_old_backup_files(path, days_threshold):
                     print(f"Old Backup File: {file_path}, Last Modified: {last_modification_time}")
 
 # Example usage: Replace 'your_path_here' with the actual path you want to search
-find_old_backup_files(path, )
+find_old_backup_files('.', days_threshold=0)
