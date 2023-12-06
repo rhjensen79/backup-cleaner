@@ -10,38 +10,19 @@
 ## About <a name = "about"></a>
 
 This project delivers a container, that can be started and mapped to a path, where it deletes all files older than x amount of days, to cleanup old backup files.
-It's ment to collaborate with a backup tool, to be run after the back runs, to make sure you don't have to many old backup files laying around. 
+It's ment to collaborate with a backup tool, to be run after the back runs, to make sure you don't have to many old backup files laying around on your source localtion. 
 
 ## Getting Started <a name = "getting_started"></a>
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
 
 ### Prerequisites
 
-TBD
-
-```
-Give examples
-```
+to use this project, you need to have Docker installed to be able to run the container.
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running.
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo.
+TBD
 
 ## Usage <a name = "usage"></a>
 
-Add notes about how to use the system.
+TBD

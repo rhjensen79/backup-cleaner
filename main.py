@@ -25,5 +25,8 @@ def find_old_backup_files(path, days_threshold=7):
                     print(f"Removing Backup File: {file_path}, Last Modified: {last_modification_time}")
                     os.remove(file_path)
 
+
+# Get default values
+days_threshold = int(os.getenv('DAYS_TRESHOLD', 7))
 # Example usage: Replace 'your_path_here' with the actual path you want to search
-find_old_backup_files('/data', days_threshold=0)
+find_old_backup_files('/data', days_threshold)
