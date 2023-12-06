@@ -1,5 +1,6 @@
-import os
 import datetime
+import os
+
 
 def find_old_backup_files(path, days_threshold=7):
     # Get the current date and time
@@ -21,7 +22,8 @@ def find_old_backup_files(path, days_threshold=7):
 
                 # Check if the file is older than the specified threshold
                 if last_modification_time < threshold_time:
-                    print(f"Old Backup File: {file_path}, Last Modified: {last_modification_time}")
+                    print(f"Removing Backup File: {file_path}, Last Modified: {last_modification_time}")
+                    os.remove(file_path)
 
 # Example usage: Replace 'your_path_here' with the actual path you want to search
-find_old_backup_files('.', days_threshold=0)
+find_old_backup_files('/data', days_threshold=0)
