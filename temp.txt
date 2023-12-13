@@ -1,0 +1,5 @@
+curl -H "Accept: application/vnd.github.everest-preview+json" \
+    -H "Authorization: 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" \
+    --request POST \
+    --data '{"event_type": "update_image"}' \
+    https://api.github.com/repos/rhjensen79/backup-cleaner/dispatches
