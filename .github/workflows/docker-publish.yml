@@ -11,7 +11,7 @@ on:
     # Publish semver tags as releases.
     tags: [ 'v*.*.*' ]
   repository_dispatch:
-    types: update_image
+    types: [update_image]
   pull_request:
     branches: [ "main" ]
 
