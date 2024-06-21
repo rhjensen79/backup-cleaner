@@ -109,4 +109,4 @@ jobs:
         with:
           status: ${{ job.status }}
           title: 'Repo. Activity Notification'
-          message: 'New container image build!'
+          message: 'New Backup-Cleaner image build!'
