@@ -100,12 +100,12 @@ jobs:
         run: echo "${TAGS}" | xargs -I {} cosign sign --yes {}@${DIGEST}
   
       # Notifi for finished job
-      - name: pushover-actions
-        uses: umahmood/pushover-actions@main
-        env:
-          PUSHOVER_TOKEN: ${{ secrets.PUSHOVER_TOKEN }}
-          PUSHOVER_USER: ${{ secrets.PUSHOVER_USER }}
-        with:
-          status: ${{ job.status }}
-          title: 'Repo. Activity Notification'
-          message: 'New Backup-Cleaner image build!'
+      #- name: pushover-actions
+      #  uses: umahmood/pushover-actions@main
+      #  env:
+      #    PUSHOVER_TOKEN: ${{ secrets.PUSHOVER_TOKEN }}
+      #    PUSHOVER_USER: ${{ secrets.PUSHOVER_USER }}
+      #  with:
+      #    status: ${{ job.status }}
+      #    title: 'Repo. Activity Notification'
+      #    message: 'New Backup-Cleaner image build!'
